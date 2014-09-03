@@ -9,38 +9,22 @@
    * E-Mail   : Aphirak_Sang-ngenchai@hotmail.com                                *
    * Date     : 03/09/2014 [dd/mm/yyyy]                                          *
    *******************************************************************************/
+   
   #include "LPD8806.h"
   #include "SPI.h"
   
   //  จำนวนของหลอด LED
   int nLEDs = 44;
+  
+  // หน่วงเวลา
   int wait = 10;
+  
   //  ขาข้อมูล(Data) ต่อขา Digital 2
   //  ขาสัญญาณนาฬิกา(Clock) ต่อขา Digital 3
   int dataPin  = 2;
   int clockPin = 3;
   
   LPD8806 strip = LPD8806(nLEDs, dataPin, clockPin);
-  
-  int RGB[3] = {  };
-                 //strip.Color(  127,  127,  127),
-                 //strip.Color(  0,  127,  0) };
-  
-    /*strip.setPixelColor(0, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(1, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(2, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(3, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(4, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(5, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(6, strip.Color(  127,  0,  0)),
-    
-    strip.setPixelColor(37, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(38, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(39, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(40, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(41, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(42, strip.Color(  127,  0,  0)),
-    strip.setPixelColor(43, strip.Color(  127,  0,  0)) };*/
   
   void setup() 
   {
